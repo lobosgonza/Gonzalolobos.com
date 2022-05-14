@@ -17,15 +17,15 @@ var dataArray = props.data
 <Row>
 <Subtitle title={props.subtitle} />
 
-{dataArray.map((item) => {return(<>
+{dataArray.map((item) => {return(
 
-    <Col sm={4}>
+    <Col sm={4} id={item.id} key={item.id}>
    
     <FontAwesomeIcon icon={item.icon}/><br/>
     <strong>{item.title}</strong>
 <p>{item.description}</p>
     </Col>
-</>
+
 )}
 )}
 

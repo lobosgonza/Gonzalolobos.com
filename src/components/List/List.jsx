@@ -17,6 +17,8 @@ function List(props) {
         {dataArray.map((item) => {
           return (
             <ListItemContent
+            id={item.id}
+            key={item.id}
               yearItem={item.year}
               descriptItem={item.description}
               titleItem={item.title}
