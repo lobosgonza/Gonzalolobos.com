@@ -1,12 +1,20 @@
+import "./style/css/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import ImgText from "./components/ImgText";
 import Usp from "./components/Usp";
-import StudiesDATA from "./components/studies";
-import EmployDATA from "./components/empleo";
-import List from "./components/List";
-import HabilitiesDATA from "./components/habilidades";
+import List from "./components/List/List";
+import Cards from "./components/Cards/Cards";
+import Copyright from "./components/Copyright";
+
+import StudiesDATA from "./assets/studies";
+import EmployDATA from "./assets/empleo";
+import HabBlandasDATA from "./assets/habBlandas";
+import HabDurasDATA from "./assets/habDuras";
+
+
 
 function App() {
   return (
@@ -14,30 +22,24 @@ function App() {
       {/* <Nav/> */}
       <Hero />
       <ImgText
-        sideImg="left"
+        sideImg="none"
         subtitle="Curriculum"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque consequat mattis. Proin mattis, dolor eget aliquet malesuada, risus ipsum vehicula nisi, in gravida ipsum lorem in nunc. Maecenas sem nisi, fermentum vel aliquet sit amet, feugiat ac nibh. Morbi congue iaculis nunc, ac pretium ante molestie quis. In justo."
-       
-      />
-      <ImgText
-        sideImg="right"
-        subtitle=""
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque consequat mattis. Proin mattis, dolor eget aliquet malesuada, risus ipsum vehicula nisi, in gravida ipsum lorem in nunc. Maecenas sem nisi, fermentum vel aliquet sit amet, feugiat ac nibh. Morbi congue iaculis nunc, ac pretium ante molestie quis. In justo."
+        text="Me llamo Gonzalo (él). Ingeniero Comercial con Magister en Psicología Organizacional UAI. Fotógrafo Publicitario Arcos, con experiencia en campañas comunicacionales y desarrollo Web."
       />
       <ImgText
         sideImg="none"
-        subtitle="Curriculum"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque consequat mattis. Proin mattis, dolor eget aliquet malesuada, risus ipsum vehicula nisi, in gravida ipsum lorem in nunc. Maecenas sem nisi, fermentum vel aliquet sit amet, feugiat ac nibh. Morbi congue iaculis nunc, ac pretium ante molestie quis. In justo."
-      />
-         <ImgText
-        sideImg="right"
         subtitle=""
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque consequat mattis. Proin mattis, dolor eget aliquet malesuada, risus ipsum vehicula nisi, in gravida ipsum lorem in nunc. Maecenas sem nisi, fermentum vel aliquet sit amet, feugiat ac nibh. Morbi congue iaculis nunc, ac pretium ante molestie quis. In justo."
+        text="Mi experiencia aborda diferentes areas que integran el diseño, los negocios y el desarrollo Web. Esto me permite poder generar piezas visuales que trasciendan la estética y puedan tener una funcionalidad orientada tanto a una óptima experiencia de usuario como el logro de objetivos del equipo."
       />
-      <List data={StudiesDATA} titleSection="Estudios" />
-      <List data={EmployDATA} titleSection="Empleo" />
-      <List data={HabilitiesDATA} titleSection="Habilidades" />
-      <Usp/>
+
+      <List data={StudiesDATA} subtitle="Estudios" />
+      <List data={EmployDATA} subtitle="Empleo" />
+
+      <Cards data={HabBlandasDATA} subtitle="Habilidades Adaptativas" />
+      <Cards data={HabDurasDATA} subtitle="Conocimientos Técnicos" />
+
+      <Usp subtitle="Conversemos" />
+      <Copyright />
     </div>
   );
 }

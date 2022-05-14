@@ -9,7 +9,7 @@ return(
     <Row>
         <Col>
         <h1>Gonzalo Lobos</h1>
-        
+        <h3>Desarrollo Web</h3>
         </Col>
     </Row>
 </Container>

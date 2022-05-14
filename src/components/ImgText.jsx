@@ -9,7 +9,7 @@ import Subtitle from "./partials/Subtitle"
 
 function ImgText(props){
 
-if (props.sideImg === "right"){
+if (props.sideImg === "left"){
 return(
 <Container>
     <Row>
@@ -26,7 +26,7 @@ return(
     </Row>
 </Container>
 )
-} else if (props.sideImg === "left"){
+} else if (props.sideImg === "right"){
 
 return(
 <Container>
