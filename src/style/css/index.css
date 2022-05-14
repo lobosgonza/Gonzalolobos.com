@@ -3,8 +3,27 @@
   padding: 0px;
 }
 
+p {
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
 .container {
   padding: 32px 10% 16px 10%;
+}
+
+.mainbannerBackground {
+  background-color: #222831;
+  color: #EEEEEE;
+}
+
+.mainBannerContainer {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .subtitleBanner {
@@ -17,6 +36,18 @@
 
 .cardItem {
   text-align: center;
+}
+
+.copyrightStyle {
+  text-align: center;
+}
+
+.svg-inline--fa:hover, .svg-inline--fa:focus {
+  color: #00ADB5;
+}
+
+.svg-inline--fa {
+  color: #222831;
 }
 
 /*# sourceMappingURL=index.css.map */

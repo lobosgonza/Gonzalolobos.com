@@ -23,7 +23,7 @@ function App() {
       <Hero />
       <ImgText
         sideImg="none"
-        subtitle="Curriculum"
+        subtitle="Sobre Mi"
         text="Me llamo Gonzalo (él). Ingeniero Comercial con Magister en Psicología Organizacional UAI. Fotógrafo Publicitario Arcos, con experiencia en campañas comunicacionales y desarrollo Web."
       />
       <ImgText
@@ -32,11 +32,12 @@ function App() {
         text="Mi experiencia aborda diferentes areas que integran el diseño, los negocios y el desarrollo Web. Esto me permite poder generar piezas visuales que trasciendan la estética y puedan tener una funcionalidad orientada tanto a una óptima experiencia de usuario como el logro de objetivos del equipo."
       />
 
-      <List data={StudiesDATA} subtitle="Estudios" />
-      <List data={EmployDATA} subtitle="Empleo" />
-
-      <Cards data={HabBlandasDATA} subtitle="Habilidades Adaptativas" />
       <Cards data={HabDurasDATA} subtitle="Conocimientos Técnicos" />
+      <Cards data={HabBlandasDATA} subtitle="Habilidades Adaptativas" />
+
+      <List data={StudiesDATA} subtitle="Estudios" />
+      <List data={EmployDATA} subtitle="Empleos" />
+
 
       <Usp subtitle="Conversemos" />
       <Copyright />

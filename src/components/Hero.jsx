@@ -5,14 +5,18 @@ import Col from 'react-bootstrap/Col';
 
 function Hero(){
 return(
-<Container>
+    <div className="mainbannerBackground">
+
+<Container className="mainBannerContainer">
     <Row>
         <Col>
         <h1>Gonzalo Lobos</h1>
-        <h3>Desarrollo Web</h3>
+        <h4>Desarrollador Web</h4>
+        <h4>Ingeniero Comercial</h4>
         </Col>
     </Row>
 </Container>
+    </div>
 )
 }
 

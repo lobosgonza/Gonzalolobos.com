@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 function Copyright (){
 
 return(
-    <Container>
+    <Container className="copyrightStyle">
 
     <i>2022 | Gonzalo Lobos</i>
     </Container>

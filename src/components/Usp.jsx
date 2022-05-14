@@ -21,7 +21,7 @@ function UspItem(props){
   ;
   
   return(
-  <Col>
+  <Col className="cardItem">
   <OverlayTrigger
     placement="right"
     delay={{ show: 250, hide: 400 }}
