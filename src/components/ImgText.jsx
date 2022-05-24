@@ -15,13 +15,14 @@ return(
     <Row>
         <Col sm={4}>
         <Figure>
-            <Figure.Image width={171} height={180} alt="171x180" src="holder.js/171x180" />
+            <Figure.Image  alt={props.alt} src={props.src} />
 
         </Figure>
         </Col>
         <Col sm={8}>
         <Subtitle title={props.subtitle} />
-        <p>{props.text}</p>
+        <p>{props.text1}</p>
+        <p>{props.text2}</p>
         </Col>
     </Row>
 </Container>
@@ -34,11 +35,12 @@ return(
         <Col sm={8}>
         <Subtitle title={props.subtitle} />
      
-        <p>{props.text}</p>
+        <p>{props.text1}</p>
+        <p>{props.text2}</p>
         </Col>
         <Col sm={4}>
         <Figure>
-            <Figure.Image width={171} height={180} alt="171x180" src="holder.js/171x180" />
+            <Figure.Image  alt={props.alt} src={props.src} />
 
         </Figure>
         </Col>
@@ -51,7 +53,8 @@ return(
     <Row>
         <Col sm={12}>
         <Subtitle title={props.subtitle} />
-        <p>{props.text}</p>
+        <p>{props.text1}</p>
+        <p>{props.text2}</p>
         </Col>
 
     </Row>

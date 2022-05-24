@@ -15,22 +15,32 @@ import HabBlandasDATA from "./assets/habBlandas";
 import HabDurasDATA from "./assets/habDuras";
 
 
+import GLPortrait from "./img/GonzaloLobosPortrait.jpg";
+import { Container } from "react-bootstrap";
+
+import MainBck from "./img/Background.jpg";
+// Imagenes
+// 1903x257 -> Main Banner
+// 450 x 450 -> Retrato
 
 function App() {
   return (
     <div className="App">
       {/* <Nav/> */}
-      <Hero />
+      <Hero background={MainBck}/>
+
+
+      
       <ImgText
-        sideImg="none"
-        subtitle="Sobre Mi"
-        text="Me llamo Gonzalo (él). Ingeniero Comercial con Magister en Psicología Organizacional UAI. Fotógrafo Publicitario Arcos, con experiencia en campañas comunicacionales y desarrollo Web."
+        sideImg="right"
+        subtitle="Sobre Mí"
+        text1="Me llamo Gonzalo (él). Ingeniero Comercial con Magister en Psicología Organizacional UAI. Fotógrafo Publicitario Arcos, con experiencia en campañas comunicacionales y desarrollo Web. Mi experiencia aborda diferentes areas que integran el diseño, los negocios y el desarrollo Web. Esto me permite poder generar piezas visuales que trasciendan la estética y puedan tener una funcionalidad orientada tanto a una óptima experiencia de usuario como el logro de objetivos del equipo."
+      text2="Mi experiencia aborda diferentes areas que integran el diseño, los negocios y el desarrollo Web. Esto me permite poder generar piezas visuales que trasciendan la estética y puedan tener una funcionalidad orientada tanto a una óptima experiencia de usuario como el logro de objetivos del equipo."
+      src={GLPortrait}
+      alt="Gonzalo Lobos Ux Designer"
       />
-      <ImgText
-        sideImg="none"
-        subtitle=""
-        text="Mi experiencia aborda diferentes areas que integran el diseño, los negocios y el desarrollo Web. Esto me permite poder generar piezas visuales que trasciendan la estética y puedan tener una funcionalidad orientada tanto a una óptima experiencia de usuario como el logro de objetivos del equipo."
-      />
+
+
 
       <Cards data={HabDurasDATA} subtitle="Conocimientos Técnicos" />
       <Cards data={HabBlandasDATA} subtitle="Habilidades Adaptativas" />

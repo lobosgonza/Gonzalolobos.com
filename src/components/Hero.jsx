@@ -3,11 +3,18 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function Hero(){
-return(
-    <div className="mainbannerBackground">
+function Hero(props){
 
-<Container className="mainBannerContainer">
+   
+
+const MainBackground = {
+    backgroundImage: 'url(' + props.background + ')',
+}
+
+return(
+    <div className="mainbannerBackground" style={MainBackground}>
+
+<Container className="mainBannerContainer" >
     <Row>
         <Col>
         <h1>Gonzalo Lobos</h1>
